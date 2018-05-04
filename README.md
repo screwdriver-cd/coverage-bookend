@@ -18,8 +18,7 @@ This bookend will try to register a Screwdriver coverage npm module based on you
 coverage:
     plugin: sonar
     sonar:
-        config:
-            foo: bar
+        foo: bar
 ```
 In this example, this bookend will register the `screwdriver-coverage-sonar` npm module with the config `foo: bar`.
 

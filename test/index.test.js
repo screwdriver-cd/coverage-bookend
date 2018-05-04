@@ -15,9 +15,7 @@ describe('index test', () => {
     const config = {
         plugin: 'example',
         example: {
-            config: {
-                foo: 'bar'
-            }
+            foo: 'bar'
         }
     };
 
