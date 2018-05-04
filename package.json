@@ -1,7 +1,7 @@
 {
-  "name": "screwdriver-screwdriver-coverage-bookend",
-  "version": "0.0.1",
-  "description": "sd.cd bookend for uploading code coverage reports and/or test results",
+  "name": "screwdriver-coverage-bookend",
+  "version": "1.0.0",
+  "description": "Screwdriver bookend for uploading code coverage reports and/or test results",
   "main": "index.js",
   "scripts": {
     "pretest": "eslint .",
@@ -22,14 +22,10 @@
   "author": "Min Zhang <minzhangcmu@gmail.com>",
   "contributors": [
     "Dao Lam <daolam112@gmail.com>",
-    "Darren Matsumoto <aeneascorrupt@gmail.com>",
-    "Ian Fox <ianfox97@gmail.com>",
     "Jeremiah Wuenschel <jeremiah.wuenschel@gmail.com>",
     "Jithin Emmanuel <jithin1987@gmail.com>",
-    "Joel Sequeira <joelseq96@gmail.com>",
     "Min Zhang <minzhangcmu@gmail.com>",
     "Peter Peterson <jedipetey@gmail.com>",
-    "Reetika Rastogi <r3rastogi@gmail.com>",
     "St. John Johnson <st.john.johnson@gmail.com",
     "Tiffany Kyi <tiffanykyi@gmail.com>"
   ],
@@ -37,7 +33,10 @@
     "chai": "^3.5.0",
     "eslint": "^3.9.1",
     "eslint-config-screwdriver": "^2.0.9",
-    "jenkins-mocha": "^4.0.0"
+    "jenkins-mocha": "^4.0.0",
+    "mockery": "^2.1.0",
+    "screwdriver-coverage-base": "^1.0.0",
+    "sinon": "^5.0.3"
   },
   "dependencies": {
     "screwdriver-build-bookend": "^2.3.0"
