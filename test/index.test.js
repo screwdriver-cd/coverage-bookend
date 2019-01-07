@@ -52,20 +52,13 @@ describe('index test', () => {
         });
 
         it('throws an error when the coverage config is not an object', () => {
-            const error = new Error('No coverage config passed in.');
-
-            try {
+            assert.throws(() => {
                 bookend = new CoverageBookend('meow');
-            } catch (err) {
-                assert.deepEqual(err, error);
-
-                return;
-            }
-            assert.fail();
+            }, Error, 'No coverage config passed in.');
         });
 
         it('does not throw an error when a npm module cannot be registered', () => {
-            try {
+            assert.doesNotThrow(() => {
                 bookend = new CoverageBookend({
                     plugin: 'doesnotexist',
                     example: {
@@ -74,9 +67,7 @@ describe('index test', () => {
                         }
                     }
                 });
-            } catch (err) {
-                assert.fail(err, '');
-            }
+            });
         });
     });
 
