@@ -31,7 +31,7 @@ class CoverageBookend extends BookendInterface {
         }
 
         // Set 'enabled' config into specified plugin instance.
-        config[pluginName]['enabled'] = config.enabled;
+        config[pluginName].enabled = config.enabled;
 
         this.coveragePlugin = new CoveragePlugin(config[pluginName]);
     }
