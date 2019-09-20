@@ -30,8 +30,8 @@ class CoverageBookend extends BookendInterface {
             return;
         }
 
-        // Set 'enabled' config into specified plugin instance.
-        config[pluginName].enabled = config.enabled;
+        // Set cluster default enable config into specified plugin instance.
+        config[pluginName].default = config.default;
 
         this.coveragePlugin = new CoveragePlugin(config[pluginName]);
     }
