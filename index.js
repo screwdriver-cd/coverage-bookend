@@ -30,6 +30,9 @@ class CoverageBookend extends BookendInterface {
             return;
         }
 
+        // Set cluster default enable config into specified plugin instance.
+        config[pluginName].default = config.default;
+
         this.coveragePlugin = new CoveragePlugin(config[pluginName]);
     }
 
@@ -48,8 +51,8 @@ class CoverageBookend extends BookendInterface {
      * @method getTeardownCommand
      * @return {Promise}           Resolves to a string that represents the commmand to execute
      */
-    getTeardownCommand() {
-        return this.coveragePlugin.getUploadCoverageCmd();
+    getTeardownCommand(config) {
+        return this.coveragePlugin.getUploadCoverageCmd(config);
     }
 }
 
