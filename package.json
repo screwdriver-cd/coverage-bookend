@@ -31,8 +31,9 @@
   ],
   "devDependencies": {
     "chai": "^4.3.6",
-    "eslint": "^4.19.1",
-    "eslint-config-screwdriver": "^3.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-screwdriver": "^5.0.7",
+    "mocha": "^8.4.0",
     "mocha-multi-reporters": "^1.5.1",
     "mocha-sonarqube-reporter": "^1.0.2",
     "mockery": "^2.1.0",
