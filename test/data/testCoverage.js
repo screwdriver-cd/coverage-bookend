@@ -2,7 +2,7 @@
 
 const CoverageBase = require('screwdriver-coverage-base');
 
-module.exports = (stubsMap) => {
+module.exports = stubsMap => {
     /**
      * Generic coverage class for testing
      * @type {Class}
@@ -13,7 +13,7 @@ module.exports = (stubsMap) => {
 
             this.options = options;
 
-            Object.keys(stubsMap).forEach((key) => {
+            Object.keys(stubsMap).forEach(key => {
                 this[key] = stubsMap[key];
             });
         }
