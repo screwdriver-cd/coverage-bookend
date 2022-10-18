@@ -1,6 +1,7 @@
 'use strict';
 
 const { BookendInterface } = require('screwdriver-build-bookend');
+const logger = require('screwdriver-logger');
 
 class CoverageBookend extends BookendInterface {
     /**
@@ -25,7 +26,7 @@ class CoverageBookend extends BookendInterface {
             // eslint-disable-next-line global-require, import/no-dynamic-require
             CoveragePlugin = require(`screwdriver-coverage-${pluginName}`);
         } catch (e) {
-            console.warn(`Coverage plugin ${pluginName} is not supported`);
+            logger.warn(`Coverage plugin ${pluginName} is not supported`);
 
             return;
         }

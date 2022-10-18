@@ -36,11 +36,13 @@
     "mocha-multi-reporters": "^1.5.1",
     "mocha-sonarqube-reporter": "^1.0.2",
     "mockery": "^2.1.0",
+    "nyc": "^15.1.0",
     "screwdriver-coverage-base": "^1.0.1",
     "sinon": "^5.0.3"
   },
   "dependencies": {
-    "screwdriver-build-bookend": "^3.0.0"
+    "screwdriver-build-bookend": "^3.0.0",
+    "screwdriver-logger": "^1.1.0"
   },
   "release": {
     "branches": [
