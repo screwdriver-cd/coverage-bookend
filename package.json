@@ -1,6 +1,6 @@
 {
   "name": "screwdriver-coverage-bookend",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Screwdriver bookend for uploading code coverage reports and/or test results",
   "main": "index.js",
   "scripts": {
@@ -31,19 +31,19 @@
   ],
   "devDependencies": {
     "chai": "^4.3.7",
-    "eslint": "^8.28.0",
-    "eslint-config-screwdriver": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-screwdriver": "^8.0.0",
     "mocha": "^10.1.0",
     "mocha-multi-reporters": "^1.5.1",
     "mocha-sonarqube-reporter": "^1.0.2",
     "mockery": "^2.1.0",
     "nyc": "^15.1.0",
-    "screwdriver-coverage-base": "^3.0.0",
+    "screwdriver-coverage-base": "^4.0.0",
     "sinon": "^14.0.2"
   },
   "dependencies": {
-    "screwdriver-build-bookend": "^4.0.0",
-    "screwdriver-logger": "^2.0.0"
+    "screwdriver-build-bookend": "^5.0.0",
+    "screwdriver-logger": "^3.0.0"
   },
   "release": {
     "branches": [
